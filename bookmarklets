@@ -1,0 +1,19 @@
+-- heres the collection of bookmarklets, these are all in javascript, and they are for fun. --
+
+1: spin screen 360°
+
+javascript:(function(){var s=document.createElement('style');s.innerHTML='%40-moz-keyframes roll { 100%25 { -moz-transform: rotate(129600deg); } } %40-o-keyframes roll { 100%25 { -o-transform: rotate(129600deg); } } %40-webkit-keyframes roll { 100%25 { -webkit-transform: rotate(129600deg); } } body{ -moz-animation-name: roll; -moz-animation-duration: 1440s; -moz-animation-iteration-count: 360; -o-animation-name: roll; -o-animation-duration: 1440s; -o-animation-iteration-count: 360; -webkit-animation-name: roll; -webkit-animation-duration: 1440s; -webkit-animation-iteration-count: 360; }';document.getElementsByTagName('head')[0].appendChild(s);}());
+
+2: uglify screen
+
+javascript:(function(){var elems=document.getElementsByTagName("*");for(var i = 0; i<elems.length;i++){elems[i].style.fontFamily="Comic Sans MS";elems[i].style.fontSize=Math.random()*75+"px";elems[i].style.color='#'+Math.random().toString(16).slice(2,%208);elems[i].style.backgroundColor='#'+Math.random().toString(16).slice(2,8)}})();document.onclick=function(){(function(){var%20d=0;setInterval(function(){document.body.style['-webkit-transform']=%20'rotate('+%20d%20+'deg)';d+=1},100)}());};
+
+3: flip screen upside down
+
+javascript:%20(function%20()%20%7B%20document.body.style.minHeight%20=%20'100vh';document.body.style.transform%20=%20'rotate(180deg)';%20%7D)();
+
+4: blur screen
+
+javascript:%20(function%20()%20%7B%20document.body.style.filter%20=%20'blur(5px)';%20%7D)();
+
+-- REST IS A WIP --
